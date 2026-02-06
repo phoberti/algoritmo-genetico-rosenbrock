@@ -66,56 +66,56 @@ Requisitos:
 
 Instalação de dependências:
 
-pip install numpy matplotlib
+- pip install numpy matplotlib
 
 
 Execução:
 
-python AG.py
+- python AG.py
 
 
 O programa abre um menu que permite configurar:
 
-Tamanho da população
+- Tamanho da população
 
-Número de gerações
+- Número de gerações
 
-Taxa de cruzamento
+- Taxa de cruzamento
 
-Taxa de mutação
+- Taxa de mutação
 
-Tamanho do torneio
+- Tamanho do torneio
 
-Percentual de elitismo
+- Percentual de elitismo
 
-Desvio padrão da mutação (sigma)
+- Desvio padrão da mutação (sigma)
 
-Rodar o algoritmo
+- Rodar o algoritmo
 
 Parâmetros padrão
 Os valores padrão definidos no código são:
 
-População: 200
+- População: 200
 
-Gerações: 100
+- Gerações: 100
 
-Taxa de cruzamento: 0.8
+- Taxa de cruzamento: 0.8
 
-Taxa de mutação: 0.05
+- Taxa de mutação: 0.05
 
-Torneio: 3
+- Torneio: 3
 
-Elitismo: 0.005 (garante ao menos 1 indivíduo)
+- Elitismo: 0.005 (garante ao menos 1 indivíduo)
 
-Sigma da mutação: 0.1
+- Sigma da mutação: 0.1
 
 Observações técnicas
-A população é inicializada por distribuição uniforme dentro dos limites do domínio.
+- A população é inicializada por distribuição uniforme dentro dos limites do domínio.
 
-O cruzamento aritmético é aplicado por par, sujeito à taxa de cruzamento.
+- O cruzamento aritmético é aplicado por par, sujeito à taxa de cruzamento.
 
-A mutação é aplicada gene a gene; quando ocorre, um novo valor é amostrado de uma normal centrada no valor atual.
+- A mutação é aplicada gene a gene; quando ocorre, um novo valor é amostrado de uma normal centrada no valor atual.
 
-O recorte (np.clip) garante que nenhum indivíduo ultrapasse os limites.
+- O recorte (np.clip) garante que nenhum indivíduo ultrapasse os limites.
 
-Os gráficos são salvos automaticamente por geração, o que pode gerar muitos arquivos se o número de gerações for alto.
+- Os gráficos são salvos automaticamente por geração, o que pode gerar muitos arquivos se o número de gerações for alto.
